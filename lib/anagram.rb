@@ -8,12 +8,12 @@ class Anagram
 
   end
 
-  def match(anagrams)
+  def match(%w(anagrams))
 
-    anagrams.select do |anagram|
+    %w(anagrams).select do |anagram|
       anagram if anagram.split("").sort == words.split("").sort
 
     end
   end
 
-end #end of class
+end #end of class Anagram
